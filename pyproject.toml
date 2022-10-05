@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "AWG_MO"
+version = "0.1.0"
+description = "AWG workshop on mathematical optimisation"
+authors = [
+	"Riley <venaturum@gmail.com>",
+]
+
+# Requirements
+[tool.poetry.dependencies]
+python = "^3.8"
+pandas = "^1.4"
+numpy = "^1.23"
+scipy = "^1.9"
+ipykernel = "^6"
+PuLP = "^2.6.0"
+
+[tool.poetry.dev-dependencies]
+
+[[tool.poetry.source]]
+name = 'default'
+url = 'https://pypi.python.org/simple'
+default = true
+
+[build-system]
+requires = ["poetry>=1.0"]
+build-backend = "poetry.masonry.api"
